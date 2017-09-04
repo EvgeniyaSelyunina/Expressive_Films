@@ -1,5 +1,7 @@
 .menu {
-  width: 500px;
+  width: 700px;
+  padding-top: 20px;
+  margin: 0 auto;
 }
 
 .menu__list {
@@ -14,13 +16,14 @@
 }
 
 .menu__link {
-  font-size: 20px;
+  font-size: 18px;
   padding: 5px 5px;
+  padding-right: 7px;
   border: none;
   text-decoration: none;
   color: #000000;
   &:hover {
-    color: white;
-    background-color: black;
+    border-bottom: 2px solid black;
+    color: #696969;
   }
 }
