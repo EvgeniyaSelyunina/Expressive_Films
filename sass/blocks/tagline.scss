@@ -1,0 +1,13 @@
+.tagline {
+  width: 100%;
+}
+
+.tagline__text {
+  font-size: 18px;
+  text-align: center;
+  margin: 8px;
+  text-transform: uppercase;
+  &--small {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,58 @@
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Expressive_Films</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+          <div class="logo">
+            <a class="logo__link" href="#">
+              <img src="img/logo.png" alt="Expressive_Films" class="logo__picture" width="304" height="150">
+            </a>
+          </div>
+          <div class="header__sidebar">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item menu__item--active"><a class="menu__link menu__link--active" href="index.html">Главная</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Команда</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Видео</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Услуги</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+      </header>
+      <section class="contacts">
+        <div class="contacts__lead">
+          <p class="contacts__text">Заказать видео в три шага или оставьте свой номер:</p>
+        </div>
+        <form class="contacts-form" action="#" method="post">
+          <div class="contacts-form__item">
+            <label class="contacts-form__label" for="name">Имя*:</label>
+            <div class="feedback-form__field">
+              <input class="contacts-form__input" type="text" placeholder="Ваше имя" id="name" required>
+            </div>
+          </div>
+          <div class="contacts-form__item">
+              <label class="contacts-form__label" for="phone"><span class="contacts-form__sight"><span class="contacts-form__hide">Контактный</span> телефон*:</span></label>
+              <div class="contacts-form__field">
+                <input class="contacts-form__input" id="phone" type="text" name="phone" placeholder="Введите телефон" required>
+              </div>
+          </div>
+          <div class="contacts-form__item">
+            <label class="contacts-form__label" for="name">Когда вам позвонить?</label>
+            <div class="feedback-form__field">
+              <textarea class="contacts-form__comment" name="text-letter" required>Комментарий</textarea>
+            </div>
+          </div>
+          <div class="contacts-form__bottom">
+            <button class="contacts-form__btn" type="submit">Заказать обратный звонок</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
