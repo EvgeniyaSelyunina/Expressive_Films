@@ -1,0 +1,22 @@
+.reviews {
+  max-width: 1200px;
+  padding: 0px 10px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+
+.reviews__item {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 45px;
+}
+
+.reviews__description {
+  font-size: 13px;
+  &--right {
+    margin-left: 45px;
+  }
+  &--left {
+    margin-right: 45px;
+  }
+}
