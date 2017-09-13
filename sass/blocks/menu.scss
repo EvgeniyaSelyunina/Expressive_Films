@@ -13,6 +13,11 @@
 
 .menu__item {
   text-align: center;
+  &--drop-down {
+    &:hover .menu__submenu {
+      display:block;
+    }
+  }
 }
 
 .menu__link {
@@ -27,4 +32,33 @@
     border-bottom: 2px solid black;
     color: #696969;
   }
+  &--active {
+      &:hover{
+        color: #696969;
+        border-bottom: 0px;
+      }
+      color: #696969;
+    }
+}
+
+.menu__submenu {
+  display: none;
+  width: 125px;
+  position: absolute;
+  top: 250px;
+  left: 629px;
+  z-index: 1;
+  list-style:none;
+  font-size: 14px;
+}
+
+.menu__submenu-link {
+  display: block;
+  padding: 3px;
+  text-decoration: none;
+  text-align: left;
+  padding: 10px 0px 10px 18px;
+  color: black;
+  background-color: #F5F5F5;
+  border-bottom: 1px solid white;
 }
