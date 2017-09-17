@@ -13,7 +13,11 @@
 @import "blocks/tagline.scss";
 @import "blocks/contacts.scss";
 @import "blocks/reviews.scss";
-@import "blocks/content.scss";
+@import "blocks/content-team.scss";
+@import "blocks/content-price.scss";
+@import "blocks/content-video.scss";
+
+@import "blocks/feedback.scss";
 
 body {
   max-width: 1920px;

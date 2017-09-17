@@ -2,16 +2,22 @@
   width: 100%;
   padding: 25px 0px;
   margin: 0 auto;
+  margin-top: 35px;
 }
 
 .contacts__text {
-  font-size: 16px;
+  font-size: 15px;
+  padding: 0px 30%;
+  margin: 0 auto;
   text-align:center;
-  padding-bottom: 20px;
+  &--under {
+    padding-top: 12px;
+  }
 }
 
 .contacts-form {
   width: 350px;
+  padding-top: 20px;
   margin: 0 auto;
   text-align:center;
 }
@@ -45,7 +51,7 @@
 
 .contacts-form__label {
   display: block;
-  font-size: 14px;
+  font-size: 13px;
   text-transform: uppercase;
   margin-bottom: 12px;
   text-align: left;

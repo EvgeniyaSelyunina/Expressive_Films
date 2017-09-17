@@ -13,6 +13,8 @@
 
 .menu__item {
   text-align: center;
+  padding-bottom: 20px;
+  position: relative;
   &--drop-down {
     &:hover .menu__submenu {
       display:block;
@@ -22,6 +24,7 @@
 
 .menu__link {
   font-size: 14px;
+  position: relative;
   text-transform: uppercase;
   padding: 5px 5px;
   padding-right: 7px;
@@ -43,10 +46,10 @@
 
 .menu__submenu {
   display: none;
-  width: 125px;
+  width: 135px;
   position: absolute;
-  top: 250px;
-  left: 629px;
+  top: 33px;
+  left: -40px;
   z-index: 1;
   list-style:none;
   font-size: 14px;
@@ -61,4 +64,7 @@
   color: black;
   background-color: #F5F5F5;
   border-bottom: 1px solid white;
+  &:hover {
+    background-color: #d8d6d6;
+  }
 }

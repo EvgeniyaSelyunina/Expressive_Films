@@ -1,16 +1,16 @@
-.content {
+.content-team {
   margin: 0 auto;
   margin-top: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
-.content__image-main {
+.content-team__image-main {
   display: inline-block;
   vertical-align: middle;
 }
 
-.content__title {
+.content-team__title {
   margin: 35px 0px;
   padding-bottom: 35px;
   font-size: 15px;
@@ -19,26 +19,19 @@
   border-bottom: 1px solid #C0C0C0;
 }
 
-.content__items {
+.content-team__items {
   position: relative;
   padding: 30px 50px;
   margin-top: 25px;
   display: flex;
   justify-content: center;
-  &::after {
-   content: "";
-   position: absolute;
-   top:27%;
-   left:49%;
-   content: url("../img/ampersand.png");
- }
 }
 
-.content__item {
+.content-team__item {
   width: 50%;
 }
 
-.content__pic {
+.content-team__pic {
   padding-bottom: 10px;
   -moz-transition: all 1s ease-out;
     -o-transition: all 1s ease-out;
@@ -50,12 +43,12 @@
       }
 }
 
-.content__subtitle {
+.content-team__subtitle {
   font-size: 15px;
   text-transform: uppercase;
 }
 
-.content__text {
+.content-team__text {
   width: 50%;
   display: inline-block;
   font-size: 13px;
