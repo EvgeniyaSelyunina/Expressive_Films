@@ -1,8 +1,8 @@
 {
-  "name": "Surfers",
+  "name": "Expressive_Films",
   "version": "0.1.0",
   "private": true,
-  "description": "Проект Surfers",
+  "description": "Проект Expressive_Films",
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "css-mqpacker": "^6.0.1",

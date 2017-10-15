@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -7,29 +8,32 @@
   <body>
     <div class="wrapper">
     <header class="header">
-        <div class="logo">
-          <a class="logo__link" href="#">
-            <img src="img/logo.png" alt="Expressive_Films" class="logo__picture" width="304" height="150">
-          </a>
-        </div>
-        <div class="header__sidebar">
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item menu__item--active"><a class="menu__link menu__link--active" href="#">Главная</a></li>
-              <li class="menu__item"><a class="menu__link" href="team.html">Команда</a></li>
-              <li class="menu__item menu__item--drop-down"><a class="menu__link" href="#">Видео</a>
-                <ul class="menu__submenu">
-                  <li class="menu__submenu-item"><a class="menu__submenu-link" href="wedding.html">Свадебное</a></li>
-                  <li class="menu__submenu-item"><a class="menu__submenu-link" href="#">Истории любви</a></li>
-                  <li class="menu__submenu-item"><a class="menu__submenu-link" href="#">Коммерческое</a></li>
-                  <li class="menu__submenu-item"><a class="menu__submenu-link" href="#">Детское</a></li>
-                </ul>
-              </li>
-              <li class="menu__item"><a class="menu__link" href="price.html">Прайс</a></li>
-              <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
-            </ul>
-          </nav>
-        </div>
+      <a id="bgndVideo" class="player" data-property="{videoURL:'https://vimeo.com/224483039', containment:'header',autoPlay:true, mute:true, startAt:10, stopAt:0,  opacity:1, addRaster:true}"></a>
+      <div class="header__container">
+       <div class="logo">
+         <a class="logo__link" href="#">
+           <img src="img/logo.png" alt="Expressive_Films" class="logo__picture" width="235" height="100">
+         </a>
+       </div>
+       <div class="header__sidebar">
+         <nav class="menu">
+           <ul class="menu__list">
+             <li class="menu__item menu__item--active"><a class="menu__link menu__link--active" href="#">Главная</a></li>
+             <li class="menu__item"><a class="menu__link" href="team.html">Команда</a></li>
+             <li class="menu__item menu__item--drop-down"><a class="menu__link" href="#">Видео</a>
+               <ul class="menu__submenu">
+                 <li class="menu__submenu-item"><a class="menu__submenu-link" href="wedding.html">Свадебное</a></li>
+                 <li class="menu__submenu-item"><a class="menu__submenu-link" href="#">Истории любви</a></li>
+                 <li class="menu__submenu-item"><a class="menu__submenu-link" href="#">Коммерческое</a></li>
+                 <li class="menu__submenu-item"><a class="menu__submenu-link" href="#">Детское</a></li>
+               </ul>
+             </li>
+             <li class="menu__item"><a class="menu__link" href="price.html">Прайс</a></li>
+             <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+           </ul>
+         </nav>
+       </div>
+     </div>
     </header>
     <div class="promo">
       <div class="promo__title">Свадебное</div>
@@ -102,5 +106,21 @@
         </div>
       </footer>
     </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.mb.vimeo_player.js"></script>
+    <script>
+    $(function(){
+      $(".player").vimeo_player();
+    });
+    </script>
+    <script>
+    $(document).on('click', '.header__button', function() {
+    var $bgndVideo = $('#bgndVideo'),
+      videoURL = $bgndVideo.attr('videoURL');
+
+    $bgndVideo.attr('videoURL', videoURL + '&autoplay=1');
+  });
+    </script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
